@@ -1,9 +1,12 @@
+import "./User.css"
 
-
-const User = () => {
+const User = ({user}) => {
+    const {name,phone,email} = user;
     return (
-        <div>
-            <h2>Our user</h2>
+        <div className="listuser">
+            <h2>Name:{name}</h2>
+            <p>Phone:{phone}</p>
+            <p>Email: {email}</p>
         </div>
     );
 };
